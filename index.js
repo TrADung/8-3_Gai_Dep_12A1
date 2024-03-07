@@ -13,3 +13,24 @@ function open_card(){
   _("box1_back").style.transform = _("box1_back").style.transform == "rotate3d(0, 1, 0, -180deg)" ? "rotate3d(0, 1, 0, 0deg)" : "rotate3d(0, 1, 0, -180deg)";
 _("tn").innerHTML = _("tn").innerHTML=="text" ? "surprise" : "text";
   }	
+
+  // Đưa toàn bộ trang lên trên cùng
+function scrollToTop() {
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Nếu bạn muốn hiệu ứng cuộn mượt
+  });
+}
+
+// Gọi hàm khi cần
+scrollToTop();
+
+// Đưa toàn bộ trang lên trên cùng
+function scrollToTop() {
+  $('html, body').animate({
+      scrollTop: 0
+  }, 'slow'); // 'slow' là tốc độ cuộn, bạn có thể thay đổi theo ý muốn
+}
+
+// Gọi hàm khi cần
+scrollToTop();
