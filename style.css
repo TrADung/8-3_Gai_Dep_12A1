@@ -25,6 +25,44 @@ body {
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('your-image.jpg'); /* Thay 'your-image.jpg' bằng đường dẫn của hình ảnh bạn muốn sử dụng */
+  background-size: cover;
+  background-attachment: fixed; /* Background sẽ giữ vị trí cố định khi cuộn */
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  /* Nếu bạn muốn giữ khoảng cách giữa background và nội dung */
+  padding: 20px;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+}
+
+.center-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Kiểu dáng của phần tử ở giữa trang */
+}
+
+.message {
+	position: relative;
+	z-index: 100;
+	text-align: center;
+	background: var(--color-text);
+	color: var(--color-bg);
+	padding: 1rem;
+	font-size: 0.85rem;
+	position: relative;
+} 
 
 body{
     background: cornsilk;
@@ -96,7 +134,8 @@ body{
   }
   
   div#box2{
-    background: white;	
+    background: rgb(255, 255, 255);	
+    background-size: contain;
     transform: rotate3d(0, 1, 0, 0deg);
     -webkit-backface-visibility: visible;
     z-index: -1;
