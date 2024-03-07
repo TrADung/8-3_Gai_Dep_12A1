@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-
+@media only screen and (max-width: 600px) {
+  /* CSS cho màn hình có độ rộng tối đa 600px */
+}
 body{
     background: cornsilk;
     margin: 0px;	
